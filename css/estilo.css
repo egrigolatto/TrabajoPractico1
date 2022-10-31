@@ -43,11 +43,10 @@ header{
 }
 .nav1{
     font-weight: 600;
-    font-size: .7rem;
+    font-size: .8rem;
 }
 .nav1:hover{
-    text-decoration:underline;
-    font-size: 0.75rem;
+    text-decoration:underline; 
 }
     
 ul.navegacion{
@@ -69,11 +68,12 @@ li{
 .iconosnav{
     margin-left: 15px;
     color: var(--color4);
-    font-size: .9rem;
+    font-size: 1rem;
+
     
 }
 .iconosnav:hover{
-    font-size: 1rem;
+    color: var(--color2);   
 }
 
 /*fin del navegador*/
@@ -152,7 +152,7 @@ img.fotoperfil{
 }
 .uno5{
     color: var(--color1);
-    border: 1px solid var(--color2);
+    border: 0 solid var(--color2);
     background-color: var(--color2);
     padding: 12px 40px;
     font-size: .9rem;
@@ -160,10 +160,11 @@ img.fotoperfil{
 }
 .uno5:hover{
     background-color: var(--color1);
-    border: var(--color2);
+    border: 0 solid var(--color2);
     color: var(--color2);
-    font-size: 1rem;
     transition: background 1s ease-in;
+    
+    
 }
 .aver{
     display: flex;
@@ -443,7 +444,7 @@ section.cuatro{
 }
 .cuatrooo{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     padding-top: 50px; 
 }
@@ -458,17 +459,23 @@ section.cuatro{
     color: var(--color2);
     font-weight: 700;
 }
-.hr1{
+/* .hr1{
     border: 2px solid #F5DF4E;
     width: 5%;
     height: 63vh;
     margin: 0px 10px 0px 0px;
     background-color: #F5DF4E;
     border-radius: 5px;
-}
+} */
 .cuatro21{ 
     display: flex;  
 }
+
+.cajatextoo{
+    border-left: 5px solid var(--color3);
+    padding-left: 15px;
+}
+
 .cajatextoo1{
     padding: 2px;  
 }
@@ -649,8 +656,8 @@ section.cuatro{
     background-color: var(--color2);
     color: var(--color1);
     color:var(--color1);
-    font-size: 1.4rem;
     transition: background .5s ease-in;
+  
 }
 .divbotoncv{
     padding-top: 60px;
@@ -683,27 +690,22 @@ section.cinco{
 }
 .cincoa:hover{
     text-decoration: underline var(--color3) 3px;;
-    font-size: 1rem;
     color: var(--color2);
 }
 .cincob:hover{
     text-decoration: underline var(--color3) 3px;
-    font-size: 1rem;
     color: var(--color2);
 }
 .cincoc:hover{
     text-decoration: underline var(--color3) 3px;;
-    font-size: 1rem;
     color: var(--color2);
 }
 .cincod:hover{
     text-decoration: underline var(--color3) 3px;;
-    font-size: 1rem;
     color: var(--color2);
 }
 .cincoe:hover{
     text-decoration: underline var(--color3) 3px;;
-    font-size: 1rem;
     color: var(--color2);
 }
 .cincogaleria{
@@ -845,7 +847,6 @@ div.divboton{
 .botonform:hover{
     background-color: var(--color1);
     color: var(--color2);
-    font-size: 1.3rem;
     transition: background 1s ease-in;
 }
 .send{
@@ -1248,7 +1249,7 @@ footer{
 
     section.dos{
 
-        padding: 50px 0px;
+        padding: 30px 0px 20px 0px;
     }
 
     div.dos2{
@@ -1351,8 +1352,8 @@ footer{
         font-size: .7rem;
         width: 100%;
     }
-    h.dos312{
-        font-size: .7rem;
+    .dos312{
+        font-size: .8rem;  
     }
 
 
@@ -1360,8 +1361,7 @@ footer{
     /*seccion tres*/
 
     section.tres{
-        padding: 50px 0px 50px 0px ;
-    
+        padding: 30px 0px 20px 0px ;
     }
     div.tres1{
         display: flex;
@@ -1420,8 +1420,7 @@ footer{
     /*seccion cuatro*/
 
     section.cuatro{
-        padding: 70px 0px 70px 0px ;
-    
+        padding: 30px 0px 20px 6px ;
     }
 
     div.cuatro1{
@@ -1429,18 +1428,17 @@ footer{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 90%;
-        
+        width: 90%; 
     }
     .cuatro12{
         width: 90%;
     }
-
+    
     div.cuatrooo{
         display: flex;
         flex-direction: column;
         width: 100%;
-
+        padding: 0;
     }
     
     .ct33{
@@ -1482,7 +1480,7 @@ footer{
     /*seccion cinco*/
 
     section.cinco{
-        padding: 70px 0px 70px 0px ;
+        padding: 30px 0px 30px 0px ;
     }
     div.cuatro1{
         display: flex;
@@ -1534,7 +1532,7 @@ footer{
 
     /*seccion seis*/
     section.seis{
-        padding: 50px 0px 50px 0px ;
+        padding: 30px 0px 30px 0px ;
     }
 
     div.seis1{
