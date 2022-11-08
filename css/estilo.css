@@ -4,20 +4,17 @@
 }
 
 ul, a{
-
     list-style: none;
     text-decoration: none;
 }
 
 :root{
-
     --color1: rgb(255,255,255);
     --color2: rgb(33,37,41);
     --color3: rgb(245,223,78);
     --color4: rgb(77,85,90);
     --color5: rgb(248 249 250);
     --fuente1: Arial, Helvetica, sans-serif;
-
 }
 
 
@@ -31,8 +28,10 @@ header{
     color: var(--color2);
     padding: 7px 200px;
 }
-.nav{
+nav{
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; 
     justify-content: space-between;
     align-items: center;
     width: 100%;
@@ -49,11 +48,11 @@ header{
     text-decoration:underline; 
 }
     
-ul.navegacion{
+.navegacion{
     display: flex; 
     color: var(--color2);
 }
-.menubarras{
+.menuMobile{
     display: none;
 }
 li{
@@ -68,9 +67,7 @@ li{
 .iconosnav{
     margin-left: 15px;
     color: var(--color4);
-    font-size: 1rem;
-
-    
+    font-size: 1rem; 
 }
 .iconosnav:hover{
     color: var(--color2);   
@@ -882,6 +879,18 @@ footer{
 
 /*diseño responsive*/
 
+/*clase para menu mobile*/
+
+.miclase{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 1.5rem;
+    align-items: center;
+    width: 100%;
+   
+}
 
 
 
@@ -913,28 +922,34 @@ footer{
 @media(min-width:350px) and (max-width:1025px){
 
     /*navegador*/
-    nav{
+
+    .navegacion{
         display: none;
     }
-    .menubarras{
+    
+    .menuMobile{
         display: flex; 
         color: var(--color2);
         font-size: 17px;
+        border: none;
+  
     }
-    .menubarras:hover{
+    .menuMobile:hover{
         font-size: 18px;
     }
     .naviconos{
         display: flex;  
     }
+
+
+    /*seccion uno*/
+
     div.unouno{
         display: flex;
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
-    }
-    
-    /*seccion uno*/
+    }  
     section.uno{
         padding: 60px 0px 10px 0px;
     }
@@ -1177,10 +1192,8 @@ footer{
     header{
         padding: 5px 10px;
     }
-    nav{
-        display: none;
-    }
-    .menubarras{
+   
+    .menuMobile{
         display:flex;     
     }
     div.nav{
